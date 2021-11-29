@@ -60,7 +60,7 @@ export const Bubble: React.FC<BubbleProps> = (props) => {
         ...animation,
       }}
     >
-      <Image
+      <Image 
         src={props.url}
         width={props.width}
         height={props.height}
