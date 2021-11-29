@@ -11,6 +11,8 @@ interface BubbleProps {
   initial_animation_offset_y: number;
   width: number;
   height: number;
+  speed_multiplicator: number;
+  transform: string;
 }
 
 export const Bubble: React.FC<BubbleProps> = (props) => {
@@ -41,12 +43,12 @@ export const Bubble: React.FC<BubbleProps> = (props) => {
   }, []);
 
   useEffect(() => {
-    setX(mousePositionX * 0.1 + props.x);
-  }, [mousePositionX, props.x]);
+    setX(mousePositionX * props.speed_multiplicator + props.x);
+  }, [mousePositionX, props.x, props.speed_multiplicator]);
 
   useEffect(() => {
-    setY(mousePositionY * 0.1 + props.y);
-  }, [mousePositionY, props.y]);
+    setY(mousePositionY * props.speed_multiplicator + props.y);
+  }, [mousePositionY, props.y, props.speed_multiplicator]);
 
   return (
     <animated.div
@@ -54,6 +56,7 @@ export const Bubble: React.FC<BubbleProps> = (props) => {
         width: props.width,
         height: props.height,
         position: "absolute",
+        transform: props.transform,
         ...animation,
       }}
     >

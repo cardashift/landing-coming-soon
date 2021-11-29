@@ -34,7 +34,7 @@ const Home: NextPage = () => {
 
       {size.height && size.width && (
         <Bubble
-          url={"/bubbles_right_comingsoon.png"}
+          url={"/img/bubble/bubbles_right_comingsoon.png"}
           width={871}
           height={692}
           x={size.width + BUBBLE_RIGHT_LEFT_VALUE}
@@ -45,12 +45,14 @@ const Home: NextPage = () => {
           initial_animation_offset_y={
             size.height + BUBBLE_RIGHT_TOP_OFFSET_VALUE
           }
+          speed_multiplicator={0.1}
+          transform={'none'}
         />
       )}
 
       {size.height && (
         <Bubble
-          url={"/bubbles_left_comingsoon.png"}
+          url={"/img/bubble/bubbles_left_comingsoon.png"}
           width={914}
           height={900}
           x={BUBBLE_LEFT_LEFT_VALUE}
@@ -59,6 +61,8 @@ const Home: NextPage = () => {
           initial_animation_offset_y={
             size.height + BUBBLE_LEFT_TOP_OFFSET_VALUE
           }
+          speed_multiplicator={0.1}
+          transform={'none'}
         />
       )}
     </Container>
