@@ -117,9 +117,9 @@ const Home: NextPage = () => {
 
       {size.height && (
         <Bubble
-          url={"/img/bubbles_left_comingsoon.png"}
-          width={914}
-          height={900}
+          url={"/img/bubble/bubbles_left_comingsoon.png"}
+          width={50}
+          height={50}
           x={BUBBLE_LEFT_LEFT_VALUE}
           initial_animation_offset_x={BUBBLE_LEFT_LEFT_OFFSET_VALUE}
           y={size.height + BUBBLE_LEFT_TOP_VALUE}

@@ -57,6 +57,7 @@ export const Bubble: React.FC<BubbleProps> = (props) => {
         height: props.height,
         position: "absolute",
         transform: props.transform,
+        zIndex: -1,
         ...animation,
       }}
     >
