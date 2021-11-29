@@ -1,8 +1,52 @@
-import '../styles/globals.css'
-import type { AppProps } from 'next/app'
+import { AppProps } from "next/dist/shared/lib/router/router";
+import Head from 'next/head';
+import { createGlobalStyle, ThemeProvider } from "styled-components";
 
-function MyApp({ Component, pageProps }: AppProps) {
-  return <Component {...pageProps} />
+const GlobalStyle = createGlobalStyle`
+  body {
+    margin: 0;
+    padding: 0;
+    background: #EBECF0;
+  }
+  @font-face {
+    font-family: "Inter";
+    src: url("/fonts/Inter/Inter-Regular.ttf");
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+  }
+  
+  @font-face {
+    font-family: "Poppins";
+    src: url("/fonts/Poppins/Poppins-SemiBold.ttf");
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+  }
+
+  @font-face {
+    font-family: "Nizzoli";
+    src: url("/fonts/Nizzoli/Nizzoli-Black.ttf");
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+  }
+  
+`;
+
+const theme = {};
+
+export default function App({ Component, pageProps }: AppProps) {
+  return (
+    <>
+      <Head>
+        <title>Cardashift</title>
+        <link rel="shortcut icon" type="image/jpg" href="/favicon.png"/>
+      </Head>
+      <GlobalStyle />
+      <ThemeProvider theme={theme}>
+        <Component {...pageProps} />
+      </ThemeProvider>
+    </>
+  );
 }
-
-export default MyApp

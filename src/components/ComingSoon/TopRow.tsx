@@ -1,6 +1,6 @@
 import styled from "styled-components";
-import Cardanoshift from "../../../assets/cardashift-comingsoon.svg";
-import CardanoIcon from "../../../assets/icons/cardano-icon.svg";
+import Cardanoshift from "../../assets/cardashift-comingsoon.svg";
+import CardanoIcon from "../../assets/icons/cardano-icon.svg";
 
 const Subtitle = styled.span`
   font-family: Inter;

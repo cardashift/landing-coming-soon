@@ -1,9 +1,9 @@
 import styled from "styled-components";
-import DiscordOrangeIcon from "../../../assets/icons/discord-orange.svg";
-import DiscordIcon from "../../../assets/icons/discord-icon.svg";
-import TwitterIcon from "../../../assets/icons/twitter-icon.svg";
-import MediumIcon from "../../../assets/icons/medium-icon.svg";
-import LinkedInIcon from "../../../assets/icons/linkedin-icon.svg";
+import DiscordOrangeIcon from "../../assets/icons/discord-orange.svg";
+import DiscordIcon from "../../assets/icons/discord-icon.svg";
+import TwitterIcon from "../../assets/icons/twitter-icon.svg";
+import MediumIcon from "../../assets/icons/medium-icon.svg";
+import LinkedInIcon from "../../assets/icons/linkedin-icon.svg";
 import Link from "next/link";
 
 const twitter_url = "https://twitter.com/";

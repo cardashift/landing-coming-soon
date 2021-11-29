@@ -40,6 +40,12 @@ export default class MyDocument extends Document {
         <Head>
           <link
             rel="preload"
+            href="/fonts/Poppins/Nizzoli-Black.ttf"
+            as="font"
+            crossOrigin=""
+          />
+          <link
+            rel="preload"
             href="/fonts/Inter/Inter-Regular.ttf"
             as="font"
             crossOrigin=""
@@ -47,12 +53,6 @@ export default class MyDocument extends Document {
           <link
             rel="preload"
             href="/fonts/Poppins/Poppins-Regular.ttf"
-            as="font"
-            crossOrigin=""
-          />
-          <link
-            rel="preload"
-            href="/fonts/Poppins/Nizzoli-Regular.ttf"
             as="font"
             crossOrigin=""
           />
