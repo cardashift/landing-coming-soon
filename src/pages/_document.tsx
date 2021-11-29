@@ -39,8 +39,22 @@ export default class MyDocument extends Document {
       <Html>
         <Head>
           <link
-            href="https://fonts.googleapis.com/css2?family=Inter&family=Poppins&family=Nizzoli&display=optional"
-            rel="stylesheet"
+            rel="preload"
+            href="/fonts/Inter/Inter-Regular.ttf"
+            as="font"
+            crossOrigin=""
+          />
+          <link
+            rel="preload"
+            href="/fonts/Poppins/Poppins-Regular.ttf"
+            as="font"
+            crossOrigin=""
+          />
+          <link
+            rel="preload"
+            href="/fonts/Poppins/Nizzoli-Regular.ttf"
+            as="font"
+            crossOrigin=""
           />
         </Head>
         <body>
