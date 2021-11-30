@@ -1,7 +1,7 @@
 import Image from "next/image";
 import { useEffect, useState } from "react";
 import { animated, useSpring } from "react-spring";
-import { useWindowSize } from "../../hooks/useWindowSize";
+import { useWindowSize } from "../hooks/useWindowSize";
 
 interface BubbleProps {
   maxWidth: number;

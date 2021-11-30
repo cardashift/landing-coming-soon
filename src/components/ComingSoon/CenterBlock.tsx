@@ -5,18 +5,13 @@ import TwitterIcon from "../../assets/icons/twitter-icon.svg";
 import MediumIcon from "../../assets/icons/medium-icon.svg";
 import LinkedInIcon from "../../assets/icons/linkedin-icon.svg";
 import Link from "next/link";
-
-const twitter_url = "https://twitter.com/";
-const discord_url = "https://discord.com";
-const linkedin_url = "https://linkedin.com";
-const medium_url = "https://medium.com";
+import { DISCORD_LINK, LINKEDIN_LINK, MEDIUM_LINK, TWITTER_LINK } from "../../utils/links";
 
 const Title = styled.div`
   font-family: Nizzoli;
   font-style: normal;
   font-weight: 900;
-  font-size: 120px;
-  line-height: 130px;
+  font-size:calc(60px + 1.5vw);
 
   display: flex;
   align-items: center;
@@ -28,8 +23,19 @@ const Title = styled.div`
   order: 0;
   flex-grow: 0;
   margin: 16px 0px;
-  width: 628px;
-  height: 260px;
+  max-width: 628px;
+  @media (max-width: 769px) {
+    font-size: 120px;
+    font-family: Nizzoli;
+    font-size: 61px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 70px;
+    letter-spacing: 0em;
+    text-align: center;
+    height: 140px;
+    width: 326px;
+  }
 `;
 
 const Subtitle = styled.div`
@@ -49,6 +55,18 @@ const Subtitle = styled.div`
   flex: none;
   flex-grow: 0;
   margin: 16px 0px;
+
+  @media (max-width: 769px) {
+    font-family: Inter;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 25px;
+    letter-spacing: 0em;
+    text-align: center;
+    height: 50px;
+    width: 326px;
+  }
 `;
 
 const Container = styled.div`
@@ -56,6 +74,9 @@ const Container = styled.div`
   justify-content: center;
   flex-direction: column;
   align-items: center;
+  @media (max-width: 769px) and (max-height: 769px){
+    margin-top: 64px
+  }
 `;
 
 const DiscordButton = styled.button`
@@ -65,7 +86,9 @@ const DiscordButton = styled.button`
   align-items: center;
   padding: 12px 24px;
 
-  width: 326px;
+  width: 28vw;
+  min-width: 326px;
+  
   height: 64px;
 
   background: linear-gradient(
@@ -138,7 +161,7 @@ const SocialMediaRow = styled.div`
   flex-direction: row;
   align-items: flex-start;
   padding: 0px;
-  margin-top: 14px;
+  margin: 14px;
 `;
 
 const CustomLink = styled.a`
@@ -166,7 +189,7 @@ export const CenterBlock: React.FC = () => (
       Cardashift, the dApp store in service of social and environmental impact
     </Subtitle>
 
-    <Link href={discord_url} passHref>
+    <Link href={DISCORD_LINK} passHref>
       <CustomLinkDiscord target="_blank">
         <DiscordButton>
           <TextDiscordButton>Join the discord to the ico</TextDiscordButton>
@@ -177,28 +200,28 @@ export const CenterBlock: React.FC = () => (
       </CustomLinkDiscord>
     </Link>
     <SocialMediaRow>
-      <Link href={discord_url} passHref>
+      <Link href={DISCORD_LINK} passHref>
         <CustomLinkSocialButton target="_blank">
           <SocialMediaButton>
             <DiscordIcon />
           </SocialMediaButton>
         </CustomLinkSocialButton>
       </Link>
-      <Link href={twitter_url} passHref>
+      <Link href={TWITTER_LINK} passHref>
         <CustomLinkSocialButton target="_blank">
           <SocialMediaButton>
             <TwitterIcon />
           </SocialMediaButton>
         </CustomLinkSocialButton>
       </Link>
-      <Link href={medium_url} passHref>
+      <Link href={MEDIUM_LINK} passHref>
         <CustomLinkSocialButton target="_blank">
           <SocialMediaButton>
             <MediumIcon />
           </SocialMediaButton>
         </CustomLinkSocialButton>
       </Link>
-      <Link href={linkedin_url} passHref>
+      <Link href={LINKEDIN_LINK} passHref>
         <CustomLinkSocialButton target="_blank">
           <SocialMediaButton>
             <LinkedInIcon />
