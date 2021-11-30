@@ -40,7 +40,7 @@ export default class MyDocument extends Document {
         <Head>
           <link
             rel="preload"
-            href="/fonts/Poppins/Nizzoli-Black.ttf"
+            href="/fonts/Nizzoli/Nizzoli-Black.ttf"
             as="font"
             crossOrigin=""
           />

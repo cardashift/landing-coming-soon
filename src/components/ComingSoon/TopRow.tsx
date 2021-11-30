@@ -20,7 +20,7 @@ const SubRow = styled.div`
   padding: 0px;
   position: absolute;
   height: 24px;
-  right: 32px;
+  right: 100px;
   top: 28px;
 `;
 
@@ -35,7 +35,7 @@ const CardashiftIconContainer = styled.div`
   position: absolute;
   width: 156.71px;
   height: 16px;
-  left: 32px;
+  left: 100px;
   top: 32px;
 `;
 

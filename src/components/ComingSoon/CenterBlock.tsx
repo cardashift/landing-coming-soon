@@ -100,7 +100,7 @@ const TextDiscordButton = styled.span`
   flex: none;
   order: 0;
   flex-grow: 0;
-  margin: 0px 12px 0px 0px;
+  margin: 0px 9px 0px 0px;
 `;
 const Ellipse = styled.div`
   background: #ffffff;
