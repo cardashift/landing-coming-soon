@@ -19,7 +19,7 @@ export const Container = styled.div`
     justify-content: center;
   }
   @media (max-height: 701px) and (max-width: 769px) {
-    overflow: scroll;
+    overflow-y: scroll;
   }
 `;
 

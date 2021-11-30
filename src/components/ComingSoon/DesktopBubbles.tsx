@@ -4,7 +4,7 @@ import { Bubble } from "../Bubble";
 import { useEffect, useState } from "react";
 
 const BubblesWrapper = styled.div`
-  @media (max-width: 769px) {
+  @media (max-width: 767px) {
     display: none;
   }
 `;

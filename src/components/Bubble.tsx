@@ -32,9 +32,8 @@ export const Bubble: React.FC<BubbleProps> = (props) => {
       top: props.y + props.initial_animation_offset_y,
       left: props.x + props.initial_animation_offset_x,
     },
-    to: {
-      top: y,
-      left: x,
+    to: async (next, cancel) => {
+      await next({ top: y, left: x });
     },
     config: {
       mass: isFirstAnimationDone ? props.mass : undefined,
@@ -44,8 +43,12 @@ export const Bubble: React.FC<BubbleProps> = (props) => {
 
   useEffect(() => {
     const handleMouseMove = (e: MouseEvent) => {
-      setMousePositionX(e.pageX);
-      setMousePositionY(e.pageY);
+      setMousePositionX((state) =>
+        Math.abs(e.pageX - state) > 2 ? e.pageX : state
+      );
+      setMousePositionY((state) =>
+        Math.abs(e.pageY - state) > 2 ? e.pageY : state
+      );
     };
 
     window.addEventListener("mousemove", handleMouseMove);
@@ -92,7 +95,7 @@ export const Bubble: React.FC<BubbleProps> = (props) => {
         src={props.url}
         width={props.maxWidth}
         height={props.maxHeight}
-        alt='Bubble'
+        alt="Bubble"
       />
     </animated.div>
   );

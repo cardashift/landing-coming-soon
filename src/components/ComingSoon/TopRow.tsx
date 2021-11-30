@@ -16,7 +16,7 @@ const CardanoShiftGreyStyled = styled(CardanoShiftGrey)`
   height: 16px;
   left: 100px;
   top: 32px;
-  @media (max-width: 769px) {
+  @media (max-width: 767px) {
     display: none;
   }
 `;
@@ -25,7 +25,7 @@ const PoweredByContainer = styled.div`
   position: absolute;
   right: 100px;
   top: 28px;
-  @media (max-width: 769px) {
+  @media (max-width: 767px) {
     display: none;
   }
 `;
