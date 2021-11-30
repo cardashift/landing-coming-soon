@@ -45,7 +45,7 @@ const MobileBubbles: React.FC = () => {
     <BubblesWrapper>
       {size.height && size.width && (
         <Bubble
-          url={"/img/bubble/small_bubble_2.png"}
+          url={"/img/bubble/small_bubble_2.svg"}
           width={size.width}
           height={size.height}
           maxHeight={45}
@@ -62,7 +62,7 @@ const MobileBubbles: React.FC = () => {
       )}
       {size.height && size.width && (
         <Bubble
-          url={"/img/bubble/background_bubble_2.png"}
+          url={"/img/bubble/background_bubble_2.svg"}
           width={443}
           height={376}
           maxHeight={376}
@@ -79,7 +79,7 @@ const MobileBubbles: React.FC = () => {
       )}
       {size.height && size.width && (
         <Bubble
-          url={"/img/bubble/big_bubble_2.png"}
+          url={"/img/bubble/big_bubble_2.svg"}
           width={size.width}
           height={size.height}
           maxHeight={56}
@@ -96,7 +96,7 @@ const MobileBubbles: React.FC = () => {
       )}
       {size.height && size.width && (
         <Bubble
-          url={"/img/bubble/small_bubble_3.png"}
+          url={"/img/bubble/small_bubble_3.svg"}
           width={size.width}
           height={size.height}
           maxHeight={40}
@@ -113,7 +113,7 @@ const MobileBubbles: React.FC = () => {
       )}
       {size.height && size.width && (
         <Bubble
-          url={"/img/bubble/big_bubble_4.png"}
+          url={"/img/bubble/big_bubble_4.svg"}
           width={size.width}
           height={size.height}
           maxHeight={56}
@@ -130,7 +130,7 @@ const MobileBubbles: React.FC = () => {
       )}
       {size.height && size.width && (
         <Bubble
-          url={"/img/bubble/big_bubble_1.png"}
+          url={"/img/bubble/big_bubble_1.svg"}
           width={size.width}
           height={size.height}
           maxHeight={56}

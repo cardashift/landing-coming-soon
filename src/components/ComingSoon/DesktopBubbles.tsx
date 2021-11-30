@@ -92,7 +92,7 @@ const DesktopBubbles: React.FC = () => {
     <BubblesWrapper>
       {size.height && size.width && (
         <Bubble
-          url={"/img/bubble/small_bubble_2.png"}
+          url={"/img/bubble/small_bubble_2.svg"}
           width={size.width * screenCoeff}
           height={size.height * screenCoeff}
           maxHeight={78}
@@ -109,7 +109,7 @@ const DesktopBubbles: React.FC = () => {
       )}
       {size.height && size.width && (
         <Bubble
-          url={"/img/bubble/small_bubble_4.png"}
+          url={"/img/bubble/small_bubble_4.svg"}
           width={size.width * screenCoeff}
           height={size.height * screenCoeff}
           maxHeight={69}
@@ -126,7 +126,7 @@ const DesktopBubbles: React.FC = () => {
       )}
       {size.height && size.width && (
         <Bubble
-          url={"/img/bubble/small_bubble_3.png"}
+          url={"/img/bubble/small_bubble_3.svg"}
           width={size.width * screenCoeff}
           height={size.height * screenCoeff}
           maxHeight={69}
@@ -143,7 +143,7 @@ const DesktopBubbles: React.FC = () => {
       )}
       {size.height && size.width && (
         <Bubble
-          url={"/img/bubble/big_bubble_2.png"}
+          url={"/img/bubble/big_bubble_2.svg"}
           width={size.width * screenCoeff}
           height={size.height * screenCoeff}
           maxHeight={98}
@@ -160,7 +160,7 @@ const DesktopBubbles: React.FC = () => {
       )}
       {size.height && size.width && (
         <Bubble
-          url={"/img/bubble/big_bubble_5.png"}
+          url={"/img/bubble/big_bubble_5.svg"}
           width={size.width * screenCoeff}
           height={size.height * screenCoeff}
           maxHeight={119}
@@ -178,7 +178,7 @@ const DesktopBubbles: React.FC = () => {
 
       {size.height && size.width && (
         <Bubble
-          url={"/img/bubble/background_bubble_2.png"}
+          url={"/img/bubble/background_bubble_2.svg"}
           width={size.width * screenCoeff * 2}
           height={size.height * screenCoeff * 2}
           maxHeight={657}
@@ -207,7 +207,7 @@ const DesktopBubbles: React.FC = () => {
 
       {size.height && size.width && (
         <Bubble
-          url={"/img/bubble/big_bubble_1.png"}
+          url={"/img/bubble/big_bubble_1.svg"}
           width={size.width * screenCoeff}
           height={size.height * screenCoeff}
           maxHeight={95}
@@ -224,7 +224,7 @@ const DesktopBubbles: React.FC = () => {
       )}
       {size.height && size.width && (
         <Bubble
-          url={"/img/bubble/big_bubble_2.png"}
+          url={"/img/bubble/big_bubble_2.svg"}
           width={size.width * screenCoeff}
           height={size.height * screenCoeff}
           maxHeight={99}
@@ -241,7 +241,7 @@ const DesktopBubbles: React.FC = () => {
       )}
       {size.height && size.width && (
         <Bubble
-          url={"/img/bubble/small_bubble_2.png"}
+          url={"/img/bubble/small_bubble_2.svg"}
           width={size.width * screenCoeff}
           height={size.height * screenCoeff}
           maxHeight={78}
@@ -258,7 +258,7 @@ const DesktopBubbles: React.FC = () => {
       )}
       {size.height && size.width && (
         <Bubble
-          url={"/img/bubble/background_bubble_2.png"}
+          url={"/img/bubble/background_bubble_2.svg"}
           width={size.width * screenCoeff}
           height={size.height * screenCoeff}
           maxHeight={657}
@@ -289,7 +289,7 @@ const DesktopBubbles: React.FC = () => {
       )}
       {size.height && size.width && (
         <Bubble
-          url={"/img/bubble/small_bubble_3.png"}
+          url={"/img/bubble/small_bubble_3.svg"}
           width={size.width * screenCoeff}
           height={size.height * screenCoeff}
           maxHeight={69}
@@ -306,7 +306,7 @@ const DesktopBubbles: React.FC = () => {
       )}
       {size.height && size.width && (
         <Bubble
-          url={"/img/bubble/big_bubble_4.png"}
+          url={"/img/bubble/big_bubble_4.svg"}
           width={size.width * screenCoeff}
           height={size.height * screenCoeff}
           maxHeight={98}
@@ -323,7 +323,7 @@ const DesktopBubbles: React.FC = () => {
       )}
       {size.height && size.width && (
         <Bubble
-          url={"/img/bubble/big_bubble_1.png"}
+          url={"/img/bubble/big_bubble_1.svg"}
           width={size.width * screenCoeff}
           height={size.height * screenCoeff}
           maxHeight={95}
