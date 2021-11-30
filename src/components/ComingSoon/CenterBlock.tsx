@@ -87,9 +87,6 @@ const DiscordButton = styled.button`
   justify-content: center;
   align-items: center;
   padding: 12px 24px;
-
-  width: 28vw;
-  min-width: 326px;
   
   height: 64px;
 
@@ -125,7 +122,7 @@ const TextDiscordButton = styled.span`
   flex: none;
   order: 0;
   flex-grow: 0;
-  margin: 0px 9px 0px 0px;
+  margin: 0px 16px;
 `;
 const Ellipse = styled.div`
   background: #ffffff;
@@ -188,13 +185,13 @@ export const CenterBlock: React.FC = () => (
   <Container>
     <Title>Debug the world</Title>
     <Subtitle>
-      Cardashift, the dApp store in service of social and environmental impact
+      Cardashift, the launchpad in service of social and environmental impact
     </Subtitle>
 
     <Link href={DISCORD_LINK} passHref>
       <CustomLinkDiscord target="_blank">
         <DiscordButton>
-          <TextDiscordButton>Join the discord to the ico</TextDiscordButton>
+          <TextDiscordButton>Join our discord</TextDiscordButton>
           <Ellipse>
             <DiscordOrangeIcon />
           </Ellipse>
