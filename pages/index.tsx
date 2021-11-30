@@ -18,8 +18,11 @@ export const Container = styled.div`
   @media (min-width: 768px) {
     justify-content: center;
   }
-  @media (max-height: 701px) and (max-width: 769px) {
+  @media (max-height: 767px) and (max-width: 767px) {
     overflow-y: scroll;
+  }
+  @media (max-width: 767px) and (max-height: 768px){
+    height: inherit;
   }
 `;
 
@@ -32,7 +35,8 @@ const PoweredByMobileContainer = styled.div`
   @media (max-height: 769px) {
     position: relative;
     bottom: unset;
-    margin-bottom: 12px
+    margin-bottom: 12px;
+    margin-top: 36px
   }
 `;
 

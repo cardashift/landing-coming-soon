@@ -17,6 +17,7 @@ interface BubbleProps {
   zIndex: number;
   speed_multiplicator: number;
   mass: number;
+  disableAnimation?: boolean;
 }
 
 export const Bubble: React.FC<BubbleProps> = (props) => {
@@ -27,21 +28,32 @@ export const Bubble: React.FC<BubbleProps> = (props) => {
   const [y, setY] = useState(props.y);
   const size = useWindowSize();
 
-  const animation = useSpring({
-    from: {
-      top: props.y + props.initial_animation_offset_y,
-      left: props.x + props.initial_animation_offset_x,
-    },
-    to: async (next, cancel) => {
-      await next({ top: y, left: x });
-    },
-    config: {
-      mass: isFirstAnimationDone ? props.mass : undefined,
-    },
-    onRest: () => setFirstAnimationDone(true),
-  });
+  const animation = useSpring(
+    props.disableAnimation
+      ? {from: {
+        top: props.y,
+        left: props.x,
+      }}
+      : {
+          from: {
+            top: props.y + props.initial_animation_offset_y,
+            left: props.x + props.initial_animation_offset_x,
+          },
+          to: async (next, cancel) => {
+            await next({ top: y, left: x });
+          },
+          config: {
+            mass: isFirstAnimationDone ? props.mass : undefined,
+          },
+          onRest: () => setFirstAnimationDone(true),
+        }
+  );
 
   useEffect(() => {
+    if (props.disableAnimation) {
+      return;
+    }
+
     const handleMouseMove = (e: MouseEvent) => {
       setMousePositionX((state) =>
         Math.abs(e.pageX - state) > 2 ? e.pageX : state
@@ -54,7 +66,7 @@ export const Bubble: React.FC<BubbleProps> = (props) => {
     window.addEventListener("mousemove", handleMouseMove);
 
     return () => window.removeEventListener("mousemove", handleMouseMove);
-  }, []);
+  }, [props.disableAnimation]);
 
   useEffect(() => {
     if (!size.width) {

@@ -32,6 +32,11 @@ const BIG_BUBBLE_1_LEFT_OFFSET_VALUE = 0;
 const BIG_BUBBLE_1_TOP_VALUE = 120;
 const BIG_BUBBLE_1_TOP_OFFSET_VALUE = -50;
 
+const BACKGROUND_BUBBLE_1_LEFT_VALUE = -200;
+const BACKGROUND_BUBBLE_1_LEFT_OFFSET_VALUE = 0;
+const BACKGROUND_BUBBLE_1_TOP_VALUE = -130;
+const BACKGROUND_BUBBLE_1_TOP_OFFSET_VALUE = 0;
+
 const BubblesWrapper = styled.div`
   @media (min-width: 768px) {
     display: none;
@@ -43,7 +48,7 @@ const MobileBubbles: React.FC = () => {
 
   return (
     <BubblesWrapper>
-      {size.height && size.width && (
+      {/* {size.height && size.width && (
         <Bubble
           url={"/img/bubble/small_bubble_2.svg"}
           width={size.width}
@@ -141,6 +146,24 @@ const MobileBubbles: React.FC = () => {
           initial_animation_offset_y={BIG_BUBBLE_1_TOP_OFFSET_VALUE}
           speed_multiplicator={0.05}
           transform={"none"}
+          zIndex={-6}
+          mass={10}
+        />
+      )} */}
+      {size.height && size.width && (
+        <Bubble
+          url={"/img/bubble/background_bubble_1.svg"}
+          disableAnimation={true}
+          width={401}
+          height={450}
+          maxHeight={401}
+          maxWidth={450}
+          x={size.width / 2 + BACKGROUND_BUBBLE_1_LEFT_VALUE}
+          initial_animation_offset_x={BACKGROUND_BUBBLE_1_LEFT_OFFSET_VALUE}
+          y={BACKGROUND_BUBBLE_1_TOP_VALUE}
+          initial_animation_offset_y={BACKGROUND_BUBBLE_1_TOP_OFFSET_VALUE}
+          speed_multiplicator={0.05}
+          transform={"scaleX(-1)"}
           zIndex={-6}
           mass={10}
         />
