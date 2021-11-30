@@ -30,10 +30,12 @@ export const Bubble: React.FC<BubbleProps> = (props) => {
 
   const animation = useSpring(
     props.disableAnimation
-      ? {from: {
-        top: props.y,
-        left: props.x,
-      }}
+      ? {
+          from: {
+            top: props.y,
+            left: props.x,
+          },
+        }
       : {
           from: {
             top: props.y + props.initial_animation_offset_y,
@@ -55,12 +57,8 @@ export const Bubble: React.FC<BubbleProps> = (props) => {
     }
 
     const handleMouseMove = (e: MouseEvent) => {
-      setMousePositionX((state) =>
-        Math.abs(e.pageX - state) > 2 ? e.pageX : state
-      );
-      setMousePositionY((state) =>
-        Math.abs(e.pageY - state) > 2 ? e.pageY : state
-      );
+      setMousePositionX((state) => e.pageX);
+      setMousePositionY((state) => e.pageY);
     };
 
     window.addEventListener("mousemove", handleMouseMove);
@@ -107,7 +105,8 @@ export const Bubble: React.FC<BubbleProps> = (props) => {
         src={props.url}
         width={props.maxWidth}
         height={props.maxHeight}
-        alt="Bubble"
+        alt='Bubble'
+        priority
       />
     </animated.div>
   );

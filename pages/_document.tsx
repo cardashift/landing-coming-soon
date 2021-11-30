@@ -56,6 +56,26 @@ export default class MyDocument extends Document {
             as="font"
             crossOrigin=""
           />
+          <link rel="preload" href="/img/bubble/background_bubble_1.svg" as="image"/>
+          <link rel="preload" href="/img/bubble/background_bubble_2.svg" as="image"/>
+          <link rel="preload" href="/img/bubble/background_bubble_3.svg" as="image"/>
+          <link rel="preload" href="/img/bubble/big_bubble_1.svg" as="image"/>
+          <link rel="preload" href="/img/bubble/big_bubble_2.svg" as="image"/>
+          <link rel="preload" href="/img/bubble/big_bubble_3.svg" as="image"/>
+          <link rel="preload" href="/img/bubble/big_bubble_4.svg" as="image"/>
+          <link rel="preload" href="/img/bubble/big_bubble_5.svg" as="image"/>
+          <link rel="preload" href="/img/bubble/bigest_bubble_1.svg" as="image"/>
+          <link rel="preload" href="/img/bubble/bigest_bubble_2.svg" as="image"/>
+          <link rel="preload" href="/img/bubble/bigest_bubble_3.svg" as="image"/>
+          <link rel="preload" href="/img/bubble/giant_bubble.svg" as="image"/>
+          <link rel="preload" href="/img/bubble/small_bubble_1.svg" as="image"/>
+          <link rel="preload" href="/img/bubble/small_bubble_2.svg" as="image"/>
+          <link rel="preload" href="/img/bubble/small_bubble_3.svg" as="image"/>
+          <link rel="preload" href="/img/bubble/small_bubble_4.svg" as="image"/>
+          <link rel="preload" href="/img/bubble/smallest_bubble_1.svg" as="image"/>
+          <link rel="preload" href="/img/bubble/smallest_bubble_2.svg" as="image"/>
+          <link rel="preload" href="/img/bubble/smallest_bubble_3.svg" as="image"/>
+          <link rel="preload" href="/img/bubble/smallest_bubble_4.svg" as="image"/>
         </Head>
         <body>
           <Main />

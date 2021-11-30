@@ -146,8 +146,8 @@ const DesktopBubbles: React.FC = () => {
           url={"/img/bubble/big_bubble_2.svg"}
           width={size.width * screenCoeff}
           height={size.height * screenCoeff}
-          maxHeight={98}
-          maxWidth={98}
+          maxHeight={98.5}
+          maxWidth={99}
           x={BIG_BUBBLE_2_LEFT_LEFT_VALUE * screenCoeff}
           initial_animation_offset_x={BIG_BUBBLE_2_LEFT_LEFT_OFFSET_VALUE}
           y={size.height + BIG_BUBBLE_2_LEFT_TOP_VALUE * screenCoeff}

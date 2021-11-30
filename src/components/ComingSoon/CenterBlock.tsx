@@ -4,6 +4,7 @@ import DiscordIcon from "../../assets/icons/discord-icon.svg";
 import TwitterIcon from "../../assets/icons/twitter-icon.svg";
 import MediumIcon from "../../assets/icons/medium-icon.svg";
 import LinkedInIcon from "../../assets/icons/linkedin-icon.svg";
+import TelegramIcon from "../../assets/icons/telegram-icon.svg";
 import Link from "next/link";
 import { DISCORD_LINK, LINKEDIN_LINK, MEDIUM_LINK, TWITTER_LINK } from "../../utils/links";
 
@@ -111,7 +112,7 @@ const DiscordButton = styled.button`
 `;
 
 const TextDiscordButton = styled.span`
-  font-family: Poppins;
+  font-family: Inter;
   font-style: normal;
   font-weight: 600;
   font-size: 18px;
@@ -202,7 +203,7 @@ export const CenterBlock: React.FC = () => (
       <Link href={DISCORD_LINK} passHref>
         <CustomLinkSocialButton target="_blank">
           <SocialMediaButton>
-            <DiscordIcon />
+            <TelegramIcon />
           </SocialMediaButton>
         </CustomLinkSocialButton>
       </Link>
