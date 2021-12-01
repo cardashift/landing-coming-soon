@@ -101,12 +101,11 @@ export const Bubble: React.FC<BubbleProps> = (props) => {
         ...animation,
       }}
     >
-      <Image
+      <img
         src={props.url}
         width={props.maxWidth}
         height={props.maxHeight}
         alt='Bubble'
-        priority
       />
     </animated.div>
   );
