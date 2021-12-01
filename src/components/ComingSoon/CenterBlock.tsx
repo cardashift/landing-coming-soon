@@ -1,12 +1,11 @@
+import Link from "next/link";
 import styled from "styled-components";
 import DiscordOrangeIcon from "../../assets/icons/discord-orange.svg";
-import DiscordIcon from "../../assets/icons/discord-icon.svg";
-import TwitterIcon from "../../assets/icons/twitter-icon.svg";
-import MediumIcon from "../../assets/icons/medium-icon.svg";
 import LinkedInIcon from "../../assets/icons/linkedin-icon.svg";
+import MediumIcon from "../../assets/icons/medium-icon.svg";
 import TelegramIcon from "../../assets/icons/telegram-icon.svg";
-import Link from "next/link";
-import { DISCORD_LINK, LINKEDIN_LINK, MEDIUM_LINK, TWITTER_LINK } from "../../utils/links";
+import TwitterIcon from "../../assets/icons/twitter-icon.svg";
+import { DISCORD_LINK, LINKEDIN_LINK, MEDIUM_LINK, TELEGRAM_LINK, TWITTER_LINK } from "../../utils/links";
 
 const Title = styled.div`
   font-family: Nizzoli;
