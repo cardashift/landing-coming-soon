@@ -64,7 +64,7 @@ export default function App({ Component, pageProps }: AppProps) {
           name='description'
           content='Cardashift funds and works intensively with impact startups that are solving social and environmental issues.'
         />
-        <link rel='shortcut icon' type='image/jpg' href='/favicon.png' />
+        <link rel='shortcut icon' type='image/png' href='/favicon.png' />
       </Head>
       <Script
           strategy='afterInteractive'
