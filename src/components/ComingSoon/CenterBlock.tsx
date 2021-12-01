@@ -200,7 +200,7 @@ export const CenterBlock: React.FC = () => (
       </CustomLinkDiscord>
     </Link>
     <SocialMediaRow>
-      <Link href={DISCORD_LINK} passHref>
+      <Link href={TELEGRAM_LINK} passHref>
         <CustomLinkSocialButton target="_blank">
           <SocialMediaButton>
             <TelegramIcon />
