@@ -1,10 +1,10 @@
-import type { NextPage } from "next";
-import styled from "styled-components";
-import { CenterBlock } from "../src/components/ComingSoon/CenterBlock";
-import DesktopBubbles from "../src/components/ComingSoon/DesktopBubbles";
-import MobileBubbles from "../src/components/ComingSoon/MobileBubbles";
-import RowPoweredBy from "../src/components/ComingSoon/RowPoweredBy";
-import { TopRow } from "../src/components/ComingSoon/TopRow";
+import { CenterBlock } from '@/cardashift/components/ComingSoon/CenterBlock';
+import DesktopBubbles from '@/cardashift/components/ComingSoon/DesktopBubbles';
+import MobileBubbles from '@/cardashift/components/ComingSoon/MobileBubbles';
+import RowPoweredBy from '@/cardashift/components/ComingSoon/RowPoweredBy';
+import { TopRow } from '@/cardashift/components/ComingSoon/TopRow';
+import type { NextPage } from 'next';
+import styled from 'styled-components';
 
 export const Container = styled.div`
   height: 100vh;
@@ -21,7 +21,7 @@ export const Container = styled.div`
   @media (max-height: 767px) and (max-width: 767px) {
     overflow-y: scroll;
   }
-  @media (max-width: 767px) and (max-height: 768px){
+  @media (max-width: 767px) and (max-height: 768px) {
     height: inherit;
   }
 `;
@@ -36,7 +36,7 @@ const PoweredByMobileContainer = styled.div`
     position: relative;
     bottom: unset;
     margin-bottom: 12px;
-    margin-top: 36px
+    margin-top: 36px;
   }
 `;
 

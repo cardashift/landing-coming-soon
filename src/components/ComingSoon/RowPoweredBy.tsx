@@ -1,5 +1,5 @@
-import styled from "styled-components";
-import CardanoIcon from "../../assets/icons/cardano-icon.svg";
+import React from 'react';
+import styled from 'styled-components';
 
 const Subtitle = styled.span`
   font-family: Inter;
@@ -26,12 +26,12 @@ const CardanoIconContainer = styled.div`
   flex-grow: 0;
   margin: 0px 8px;
 `;
-  
-const RowPoweredBy : React.FC = () => (
+
+const RowPoweredBy: React.FC = () => (
   <Container>
     <Subtitle>Powered by</Subtitle>
     <CardanoIconContainer>
-      <CardanoIcon />
+      <img src="/icons/cardano-icon.svg" alt="Icon Cardano" />
     </CardanoIconContainer>
   </Container>
 );

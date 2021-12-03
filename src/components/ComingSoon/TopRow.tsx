@@ -1,16 +1,14 @@
-import styled from "styled-components";
-import CardanoShiftGrey from "../../assets/cardashift-comingsoon-grey.svg";
-import CardanoShiftWhite from "../../assets/cardashift-comingsoon-white.svg";
-import RowPoweredBy from "./RowPoweredBy";
+import styled from 'styled-components';
+import RowPoweredBy from './RowPoweredBy';
 
-const CardanoShiftWhiteMobile = styled(CardanoShiftWhite)`
+const CardanoShiftWhiteMobile = styled.img`
   margin-top: 32px;
   @media (min-width: 768px) {
     display: none;
   }
 `;
 
-const CardanoShiftGreyStyled = styled(CardanoShiftGrey)`
+const CardanoShiftGreyStyled = styled.img`
   position: absolute;
   width: 156.71px;
   height: 16px;
@@ -32,8 +30,14 @@ const PoweredByContainer = styled.div`
 
 export const TopRow: React.FC = () => (
   <>
-    <CardanoShiftWhiteMobile />
-    <CardanoShiftGreyStyled />
+    <CardanoShiftWhiteMobile
+      src="/icons/cardashift-comingsoon-white.svg"
+      alt="Icon Cardanoshift"
+    />
+    <CardanoShiftGreyStyled
+      src="/icons/cardashift-comingsoon-grey.svg"
+      alt="Icon Cardanoshift"
+    />
     <PoweredByContainer>
       <RowPoweredBy />
     </PoweredByContainer>

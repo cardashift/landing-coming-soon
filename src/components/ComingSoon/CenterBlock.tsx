@@ -1,17 +1,19 @@
-import Link from "next/link";
-import styled from "styled-components";
-import DiscordOrangeIcon from "../../assets/icons/discord-orange.svg";
-import LinkedInIcon from "../../assets/icons/linkedin-icon.svg";
-import MediumIcon from "../../assets/icons/medium-icon.svg";
-import TelegramIcon from "../../assets/icons/telegram-icon.svg";
-import TwitterIcon from "../../assets/icons/twitter-icon.svg";
-import { DISCORD_LINK, LINKEDIN_LINK, MEDIUM_LINK, TELEGRAM_LINK, TWITTER_LINK } from "../../utils/links";
+import Link from 'next/link';
+import styled from 'styled-components';
+
+import {
+  DISCORD_LINK,
+  LINKEDIN_LINK,
+  MEDIUM_LINK,
+  TELEGRAM_LINK,
+  TWITTER_LINK,
+} from '../../utils/links';
 
 const Title = styled.div`
   font-family: Nizzoli;
   font-style: normal;
   font-weight: 900;
-  font-size:calc(60px + 1.5vw);
+  font-size: calc(60px + 1.5vw);
 
   display: flex;
   align-items: center;
@@ -87,7 +89,7 @@ const DiscordButton = styled.button`
   justify-content: center;
   align-items: center;
   padding: 12px 24px;
-  
+
   height: 64px;
 
   background: linear-gradient(
@@ -181,7 +183,7 @@ const CustomLinkDiscord = styled(CustomLink)`
   margin: 24px 24px;
 `;
 
-export const CenterBlock: React.FC = () => (
+const CenterBlock: React.FC = () => (
   <Container>
     <Title>Debug the world</Title>
     <Subtitle>
@@ -193,7 +195,7 @@ export const CenterBlock: React.FC = () => (
         <DiscordButton>
           <TextDiscordButton>Join our discord</TextDiscordButton>
           <Ellipse>
-            <DiscordOrangeIcon />
+            <img src="/icons/discord-orange.svg" alt="Icon discord" />
           </Ellipse>
         </DiscordButton>
       </CustomLinkDiscord>
@@ -202,31 +204,33 @@ export const CenterBlock: React.FC = () => (
       <Link href={TELEGRAM_LINK} passHref>
         <CustomLinkSocialButton target="_blank">
           <SocialMediaButton>
-            <TelegramIcon />
+            <img src="/icons/telegram-icon.svg" alt="Icon Telegram" />
           </SocialMediaButton>
         </CustomLinkSocialButton>
       </Link>
       <Link href={TWITTER_LINK} passHref>
         <CustomLinkSocialButton target="_blank">
           <SocialMediaButton>
-            <TwitterIcon />
+            <img src="/icons/twitter-icon.svg" alt="Icon Twitter" />
           </SocialMediaButton>
         </CustomLinkSocialButton>
       </Link>
       <Link href={MEDIUM_LINK} passHref>
         <CustomLinkSocialButton target="_blank">
           <SocialMediaButton>
-            <MediumIcon />
+            <img src="/icons/medium-icon.svg" alt="Icon Medium" />
           </SocialMediaButton>
         </CustomLinkSocialButton>
       </Link>
       <Link href={LINKEDIN_LINK} passHref>
         <CustomLinkSocialButton target="_blank">
           <SocialMediaButton>
-            <LinkedInIcon />
+            <img src="/icons/linkedin-icon.svg" alt="Icon LinkedIn" />
           </SocialMediaButton>
         </CustomLinkSocialButton>
       </Link>
     </SocialMediaRow>
   </Container>
 );
+
+export default CenterBlock;

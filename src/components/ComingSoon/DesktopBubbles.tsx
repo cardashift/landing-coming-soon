@@ -1,7 +1,7 @@
-import styled from "styled-components";
-import { useWindowSize } from "../../hooks/useWindowSize";
-import { Bubble } from "../Bubble";
-import { useEffect, useState } from "react";
+import styled from 'styled-components';
+import { useWindowSize } from '@/cardashift/hooks/useWindowSize';
+import { Bubble } from '@/cardashift/components/Bubble';
+import { useEffect, useState } from 'react';
 
 const BubblesWrapper = styled.div`
   @media (max-width: 767px) {
@@ -87,12 +87,11 @@ const DesktopBubbles: React.FC = () => {
     }
   }, [size]);
 
-
   return (
     <BubblesWrapper>
       {size.height && size.width && (
         <Bubble
-          url={"/img/bubble/small_bubble_2.svg"}
+          url={'/bubbles/small_bubble_2.svg'}
           width={size.width * screenCoeff}
           height={size.height * screenCoeff}
           maxHeight={78}
@@ -102,14 +101,14 @@ const DesktopBubbles: React.FC = () => {
           y={size.height + SMALL_BUBBLE_2_LEFT_TOP_VALUE * screenCoeff}
           initial_animation_offset_y={SMALL_BUBBLE_2_LEFT_TOP_OFFSET_VALUE}
           speed_multiplicator={0.07}
-          transform={"rotate(-90deg)"}
+          transform={'rotate(-90deg)'}
           zIndex={-4}
           mass={5}
         />
       )}
       {size.height && size.width && (
         <Bubble
-          url={"/img/bubble/small_bubble_4.svg"}
+          url={'/bubbles/small_bubble_4.svg'}
           width={size.width * screenCoeff}
           height={size.height * screenCoeff}
           maxHeight={69}
@@ -119,14 +118,14 @@ const DesktopBubbles: React.FC = () => {
           y={size.height + SMALL_BUBBLE_4_LEFT_TOP_VALUE * screenCoeff}
           initial_animation_offset_y={SMALL_BUBBLE_4_LEFT_TOP_OFFSET_VALUE}
           speed_multiplicator={0.07}
-          transform={"rotate(-90deg)"}
+          transform={'rotate(-90deg)'}
           zIndex={-4}
           mass={5}
         />
       )}
       {size.height && size.width && (
         <Bubble
-          url={"/img/bubble/small_bubble_3.svg"}
+          url={'/bubbles/small_bubble_3.svg'}
           width={size.width * screenCoeff}
           height={size.height * screenCoeff}
           maxHeight={69}
@@ -136,14 +135,14 @@ const DesktopBubbles: React.FC = () => {
           y={size.height + SMALL_BUBBLE_3_LEFT_TOP_VALUE * screenCoeff}
           initial_animation_offset_y={SMALL_BUBBLE_3_LEFT_TOP_OFFSET_VALUE}
           speed_multiplicator={0.07}
-          transform={"rotate(-90deg)"}
+          transform={'rotate(-90deg)'}
           zIndex={-4}
           mass={5}
         />
       )}
       {size.height && size.width && (
         <Bubble
-          url={"/img/bubble/big_bubble_2.svg"}
+          url={'/bubbles/big_bubble_2.svg'}
           width={size.width * screenCoeff}
           height={size.height * screenCoeff}
           maxHeight={98.5}
@@ -153,14 +152,14 @@ const DesktopBubbles: React.FC = () => {
           y={size.height + BIG_BUBBLE_2_LEFT_TOP_VALUE * screenCoeff}
           initial_animation_offset_y={BIG_BUBBLE_2_LEFT_TOP_OFFSET_VALUE}
           speed_multiplicator={0.05}
-          transform={"rotate(-90deg)"}
+          transform={'rotate(-90deg)'}
           zIndex={-3}
           mass={10}
         />
       )}
       {size.height && size.width && (
         <Bubble
-          url={"/img/bubble/big_bubble_5.svg"}
+          url={'/bubbles/big_bubble_5.svg'}
           width={size.width * screenCoeff}
           height={size.height * screenCoeff}
           maxHeight={119}
@@ -170,7 +169,7 @@ const DesktopBubbles: React.FC = () => {
           y={size.height + BIG_BUBBLE_5_LEFT_TOP_VALUE * screenCoeff}
           initial_animation_offset_y={BIG_BUBBLE_5_LEFT_TOP_OFFSET_VALUE}
           speed_multiplicator={0.05}
-          transform={"rotate(-130deg)"}
+          transform={'rotate(-130deg)'}
           zIndex={-4}
           mass={10}
         />
@@ -178,7 +177,7 @@ const DesktopBubbles: React.FC = () => {
 
       {size.height && size.width && (
         <Bubble
-          url={"/img/bubble/background_bubble_2.svg"}
+          url={'/bubbles/background_bubble_2.svg'}
           width={size.width * screenCoeff * 2}
           height={size.height * screenCoeff * 2}
           maxHeight={657}
@@ -199,7 +198,7 @@ const DesktopBubbles: React.FC = () => {
           }
           initial_animation_offset_y={BACKGROUND_BUBBLE_2_LEFT_TOP_OFFSET_VALUE}
           speed_multiplicator={0.02}
-          transform={"rotate(-135deg)"}
+          transform={'rotate(-135deg)'}
           zIndex={-5}
           mass={20}
         />
@@ -207,7 +206,7 @@ const DesktopBubbles: React.FC = () => {
 
       {size.height && size.width && (
         <Bubble
-          url={"/img/bubble/big_bubble_1.svg"}
+          url={'/bubbles/big_bubble_1.svg'}
           width={size.width * screenCoeff}
           height={size.height * screenCoeff}
           maxHeight={95}
@@ -217,14 +216,14 @@ const DesktopBubbles: React.FC = () => {
           y={size.height + BIG_BUBBLE_1_LEFT_TOP_VALUE * screenCoeff}
           initial_animation_offset_y={BIG_BUBBLE_1_LEFT_TOP_OFFSET_VALUE}
           speed_multiplicator={0.05}
-          transform={"rotate(-90deg)"}
+          transform={'rotate(-90deg)'}
           zIndex={-6}
           mass={10}
         />
       )}
       {size.height && size.width && (
         <Bubble
-          url={"/img/bubble/big_bubble_2.svg"}
+          url={'/bubbles/big_bubble_2.svg'}
           width={size.width * screenCoeff}
           height={size.height * screenCoeff}
           maxHeight={99}
@@ -234,14 +233,14 @@ const DesktopBubbles: React.FC = () => {
           y={size.height + BIG_BUBBLE_2_RIGHT_TOP_VALUE * screenCoeff}
           initial_animation_offset_y={BIG_BUBBLE_2_RIGHT_TOP_OFFSET_VALUE}
           speed_multiplicator={0.05}
-          transform={"matrix(1, 0, 0, -1, 0, 0)"}
+          transform={'matrix(1, 0, 0, -1, 0, 0)'}
           zIndex={-4}
           mass={10}
         />
       )}
       {size.height && size.width && (
         <Bubble
-          url={"/img/bubble/small_bubble_2.svg"}
+          url={'/bubbles/small_bubble_2.svg'}
           width={size.width * screenCoeff}
           height={size.height * screenCoeff}
           maxHeight={78}
@@ -251,14 +250,14 @@ const DesktopBubbles: React.FC = () => {
           y={size.height + SMALL_BUBBLE_2_RIGHT_TOP_VALUE * screenCoeff}
           initial_animation_offset_y={SMALL_BUBBLE_2_RIGHT_TOP_OFFSET_VALUE}
           speed_multiplicator={0.07}
-          transform={"matrix(1, 0, 0, -1, 0, 0)"}
+          transform={'matrix(1, 0, 0, -1, 0, 0)'}
           zIndex={-4}
           mass={5}
         />
       )}
       {size.height && size.width && (
         <Bubble
-          url={"/img/bubble/background_bubble_2.svg"}
+          url={'/bubbles/background_bubble_2.svg'}
           width={size.width * screenCoeff}
           height={size.height * screenCoeff}
           maxHeight={657}
@@ -282,14 +281,14 @@ const DesktopBubbles: React.FC = () => {
             BACKGROUND_BUBBLE_2_RIGHT_TOP_OFFSET_VALUE
           }
           speed_multiplicator={0.02}
-          transform={"matrix(1, 0, 0, -1, 0, 0)"}
+          transform={'matrix(1, 0, 0, -1, 0, 0)'}
           zIndex={-5}
           mass={20}
         />
       )}
       {size.height && size.width && (
         <Bubble
-          url={"/img/bubble/small_bubble_3.svg"}
+          url={'/bubbles/small_bubble_3.svg'}
           width={size.width * screenCoeff}
           height={size.height * screenCoeff}
           maxHeight={69}
@@ -299,14 +298,14 @@ const DesktopBubbles: React.FC = () => {
           y={size.height + SMALL_BUBBLE_3_RIGHT_TOP_VALUE * screenCoeff}
           initial_animation_offset_y={SMALL_BUBBLE_3_RIGHT_TOP_OFFSET_VALUE}
           speed_multiplicator={0.07}
-          transform={"matrix(1, 0, 0, -1, 0, 0)"}
+          transform={'matrix(1, 0, 0, -1, 0, 0)'}
           zIndex={-4}
           mass={5}
         />
       )}
       {size.height && size.width && (
         <Bubble
-          url={"/img/bubble/big_bubble_4.svg"}
+          url={'/bubbles/big_bubble_4.svg'}
           width={size.width * screenCoeff}
           height={size.height * screenCoeff}
           maxHeight={98}
@@ -316,14 +315,14 @@ const DesktopBubbles: React.FC = () => {
           y={size.height + BIG_BUBBLE_4_RIGHT_TOP_VALUE * screenCoeff}
           initial_animation_offset_y={BIG_BUBBLE_4_RIGHT_TOP_OFFSET_VALUE}
           speed_multiplicator={0.05}
-          transform={"matrix(1, 0, 0, -1, 0, 0)"}
+          transform={'matrix(1, 0, 0, -1, 0, 0)'}
           zIndex={-3}
           mass={10}
         />
       )}
       {size.height && size.width && (
         <Bubble
-          url={"/img/bubble/big_bubble_1.svg"}
+          url={'/bubbles/big_bubble_1.svg'}
           width={size.width * screenCoeff}
           height={size.height * screenCoeff}
           maxHeight={95}
@@ -333,7 +332,7 @@ const DesktopBubbles: React.FC = () => {
           y={size.height + BIG_BUBBLE_1_RIGHT_TOP_VALUE * screenCoeff}
           initial_animation_offset_y={BIG_BUBBLE_1_RIGHT_TOP_OFFSET_VALUE}
           speed_multiplicator={0.05}
-          transform={"matrix(1, 0, 0, -1, 0, 0)"}
+          transform={'matrix(1, 0, 0, -1, 0, 0)'}
           zIndex={-6}
           mass={10}
         />

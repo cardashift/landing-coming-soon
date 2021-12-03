@@ -9,11 +9,8 @@ COPY . .
 COPY --from=dependencies /app/node_modules ./node_modules
 RUN yarn build
 
-FROM nginx:16.11-alpine as runner
-COPY ./.nginx/nginx.conf /etc/nginx/nginx.conf
-## Remove default nginx index page
+FROM nginx:1.20.2-alpine as runner
 RUN rm -rf /usr/share/nginx/html/*
 COPY --from=builder /app/out /usr/share/nginx/html
-EXPOSE 3000
+EXPOSE 80
 ENTRYPOINT ["nginx", "-g", "daemon off;"]
-

@@ -1,8 +1,7 @@
 /* eslint-disable @next/next/no-img-element */
-import Image from "next/image";
-import { useEffect, useState } from "react";
-import { animated, useSpring } from "react-spring";
-import { useWindowSize } from "../hooks/useWindowSize";
+import { useEffect, useState } from 'react';
+import { animated, useSpring } from 'react-spring';
+import { useWindowSize } from '../hooks/useWindowSize';
 
 interface BubbleProps {
   maxWidth: number;
@@ -62,9 +61,9 @@ export const Bubble: React.FC<BubbleProps> = (props) => {
       setMousePositionY((state) => e.pageY);
     };
 
-    window.addEventListener("mousemove", handleMouseMove);
+    window.addEventListener('mousemove', handleMouseMove);
 
-    return () => window.removeEventListener("mousemove", handleMouseMove);
+    return () => window.removeEventListener('mousemove', handleMouseMove);
   }, [props.disableAnimation]);
 
   useEffect(() => {
@@ -96,7 +95,7 @@ export const Bubble: React.FC<BubbleProps> = (props) => {
         height: props.height,
         maxHeight: props.maxHeight,
         maxWidth: props.maxWidth,
-        position: "absolute",
+        position: 'absolute',
         transform: props.transform,
         zIndex: props.zIndex,
         ...animation,
@@ -106,7 +105,7 @@ export const Bubble: React.FC<BubbleProps> = (props) => {
         src={props.url}
         width={props.maxWidth}
         height={props.maxHeight}
-        alt='Bubble'
+        alt="Bubble"
       />
     </animated.div>
   );
