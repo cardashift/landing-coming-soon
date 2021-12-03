@@ -76,9 +76,8 @@ const Container = styled.div`
   justify-content: center;
   flex-direction: column;
   align-items: center;
-  margin-bottom: 32px
-  margin-top: 10em;
-  @media (max-width: 767px) and (max-height: 780px){
+  margin-bottom: 32px;
+  @media (max-width: 767px) and (max-height: 780px) {
     margin-top: 10em;
   }
 `;

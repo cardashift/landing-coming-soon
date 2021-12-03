@@ -1,4 +1,4 @@
-import { CenterBlock } from '@/cardashift/components/ComingSoon/CenterBlock';
+import CenterBlock from '@/cardashift/components/ComingSoon/CenterBlock';
 import DesktopBubbles from '@/cardashift/components/ComingSoon/DesktopBubbles';
 import MobileBubbles from '@/cardashift/components/ComingSoon/MobileBubbles';
 import RowPoweredBy from '@/cardashift/components/ComingSoon/RowPoweredBy';
